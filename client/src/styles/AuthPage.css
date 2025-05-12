@@ -1,0 +1,64 @@
+.perspective {
+  perspective: 1000px;
+}
+
+.transform-style {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+.input {
+  width: 100%;
+  padding: 0.5rem 0.75rem; /* Меньше отступов */
+  border: 2px solid #d1d5db;
+  border-radius: 0.5rem; /* Умеренное скругление */
+  font-size: 0.95rem;
+  font-family: 'Baloo 2', cursive;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #5eead4;
+  box-shadow: 0 0 0 3px rgba(94, 234, 212, 0.35);
+}
+
+
+.btn-primary {
+  background-color: #10B981;
+  color: white;
+  font-weight: 600;
+  padding: 0.6rem 1.5rem;
+  border-radius: 0.75rem;
+  font-family: 'Baloo 2', cursive;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #059669;
+}
+
+.btn-outline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem 1rem;
+  border: 2px solid #d1d5db;
+  border-radius: 0.75rem;
+  background-color: white;
+  font-weight: 600;
+  font-family: 'Baloo 2', cursive;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.btn-outline:hover {
+  border-color: #10B981;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+}

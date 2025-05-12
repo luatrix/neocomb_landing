@@ -2,6 +2,29 @@ import React, { useState } from 'react';
 import Topbar from '../components/TopBar';
 import { FaMagic, FaSlidersH, FaDownload, FaHeart } from 'react-icons/fa';
 
+const genreOptions = [
+  "Roleplay",
+  "Obby / Parkour",
+  "Tycoon",
+  "Simulator",
+  "PvP / Fighting",
+  "Horror",
+  "Adventure",
+  "City / Real Life"
+];
+
+
+const styleOptions = [
+  "Semi-Realistic",
+  "Cartoony",
+  "Pixel Art",
+  "Minimalist",
+  "Cyberpunk",
+  "Low Poly",
+  "Neon Glow",
+  "Fantasy"
+];
+
 
 export default function GeneratorPage() {
     const [mode, setMode] = useState('simple');
@@ -97,7 +120,18 @@ export default function GeneratorPage() {
                     {/* FORM */}
                     {mode === 'simple' ? (
                         <div className="flex flex-col gap-4">
-                            <select className="input"><option>Game Genre</option></select>
+                            {/* <select className="input"><option>Game Genre</option></select> */}
+                            <select className="input" defaultValue="Horror">
+  <option value="Roleplay">🎭 Roleplay</option>
+  <option value="Obby / Parkour">🧗 Obby / Parkour</option>
+  <option value="Tycoon">🏗️ Tycoon</option>
+  <option value="Simulator">🌀 Simulator</option>
+  <option value="PvP / Fighting">⚔️ PvP / Fighting</option>
+  <option value="Horror">👻 Horror</option>
+  <option value="Adventure">🗺️ Adventure</option>
+  <option value="City / Real Life">🏙️ City / Real Life</option>
+</select>
+
                             <textarea placeholder="Description" rows={3} className="input resize-y max-h-32 overflow-auto" />
                             <select className="input"><option>Style</option></select>
                             <select className="input"><option>Character</option></select>

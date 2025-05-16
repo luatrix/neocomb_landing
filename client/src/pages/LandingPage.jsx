@@ -73,7 +73,7 @@ export default function LandingPage() {
 
       {/* Footer */}
       <footer className="text-center text-sm text-gray-500 pb-10">
-        © 2025 ThumBee by beeSmart Education. All rights reserved.
+        © 2025 ThumBee by NeoComb. All rights reserved.
       </footer>
     </div>
   );

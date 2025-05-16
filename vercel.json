@@ -1,7 +1,22 @@
 {
-  "buildCommand": "npm install --legacy-peer-deps && npm run build",
-  "outputDirectory": "build",
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
-  ]
+  "builds": [
+    {
+      "src": "Client/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "Client/build"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ],
+  "build": {
+    "env": {
+      "NPM_CONFIG_LEGACY_PEER_DEPS": "true"
+    }
+  }
 }

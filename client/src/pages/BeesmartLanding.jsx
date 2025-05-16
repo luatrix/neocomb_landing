@@ -8,37 +8,62 @@ export default function BeeSmartLanding() {
   return (
     <>
       <Helmet>
-        <title>beeSmart Education</title>
-        <link rel="icon" type="image/png" href="/favicons/beesmart-fav.png" />
+        <title>NeoComb</title>
+        <link rel="icon" type="image/png" href="/favicons/neocomb-fav.png" />
       </Helmet>
 
-      <div className="min-h-screen bg-gradient-to-br from-[#fff7e1] via-white to-[#fde9b0] font-sans text-gray-800">
+      <div className="min-h-screen bg-gradient-to-br from-[#ffe266] to-[#fcb933] font-sans text-gray-800">
         {/* Header */}
 
-        <header className="w-full px-6 py-4 flex items-center justify-between shadow-sm bg-white sticky top-0 z-50">
+        <header className="w-full px-6 py-2 flex items-center justify-between shadow-sm bg-white sticky top-0 z-50">
           <div className="flex items-center gap-3">
-            <img src="/assets/beesmart-logo.png" alt="beeSmart" className="h-8" />
+            <img src="/assets/neocomb-logo.svg" alt="beeSmart" className="h-12" />
           </div>
-          <nav className="flex gap-6 text-sm text-gray-700 font-medium">
-            <a href="#labee" className="hover:text-[#592AD0] transition">LaBee</a>
-            <a href="#thumbee" className="hover:text-[#2DD4BF] transition">ThumBee</a>
-          </nav>
+          <nav className="flex gap-4 text-base text-gray-700 font-semibold">
+  <a
+    href="#labee"
+    className="px-4 py-2 rounded-lg hover:text-[#592AD0] hover:bg-[#f0e7ff] transition"
+  >
+    LaBee
+  </a>
+  <a
+    href="#thumbee"
+    className="px-4 py-2 rounded-lg hover:text-[#2DD4BF] hover:bg-[#d7fafa] transition"
+  >
+    ThumBee
+  </a>
+</nav>
+
         </header>
 
         {/* Hero Section */}
-        <section className="px-6 py-20 text-center max-w-3xl mx-auto min-h-screen flex flex-col justify-center">
-          <h2 className="text-4xl font-bold mb-6">New Era of Learning</h2>
-          <div className="flex justify-center mb-6">
-            <img
-              src="/assets/beesmart-logo.png"
-              alt="beeSmart Logo"
-              className="h-16 md:h-20 drop-shadow-md"
-            />
+        <section className="px-6 py-20 text-center max-w-3xl mx-auto min-h-screen flex flex-col justify-center relative overflow-hidden">
+          {/* Паттерн фоном, поверх родительского градиента */}
+
+
+          {/* Пчела-анимация */}
+
+
+          <div className="relative z-10">
+            <h2 className="text-4xl font-bold mb-6 text-gray-900 drop-shadow-sm">
+              Learn. Build. Bee Smart
+            </h2>
+            <div className="flex justify-center mb-6 z-10">
+              <img
+                src="/assets/neocomb-large.png"
+                alt="beeSmart Logo"
+                className="h-24 md:h-28 animate-float"
+                style={{ animationDuration: '6s' }}
+              />
+            </div>
+
+            <p className="text-lg text-gray-800 mb-10 leading-relaxed">
+              We create smart next-generation educational tools that make learning creative, playful, and accessible for all young creators.
+            </p>
           </div>
-          <p className="text-lg text-gray-700 mb-10">
-            We create smart next-generation educational tools that make learning creative, playful, and accessible for all children.
-          </p>
         </section>
+
+
 
         {/* LaBee Section */}
         <section id="labee" className="bg-gradient-to-r from-white to-[#f5f0ff] py-20 px-6 md:px-12 min-h-screen flex items-center">

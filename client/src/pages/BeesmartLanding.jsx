@@ -28,7 +28,7 @@ export default function BeeSmartLanding() {
   </a>
   <a
     href="#thumbee"
-    className="px-4 py-2 rounded-lg hover:text-[#2DD4BF] hover:bg-[#d7fafa] transition"
+    className="px-4 py-2 rounded-lg hover:text-[#10B981] hover:bg-[#d7fafa] transition"
   >
     ThumBee
   </a>
